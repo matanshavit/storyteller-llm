@@ -8,10 +8,11 @@ dependencies = [
     "numpy",
     "matplotlib",
     "jupyter",
+    "scikit-learn",
 ]
 
-[tool.setuptools]
-packages = []
+[tool.setuptools.packages.find]
+include = ["foundations*"]
 
 [project.optional-dependencies]
 dev = [
